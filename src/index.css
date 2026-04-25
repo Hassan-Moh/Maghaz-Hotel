@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Playfair Display", serif;
+  --font-sans: "Montserrat", sans-serif;
+
+  --color-forest: #013220;
+  --color-gold: #D4AF37;
+  --color-gold-light: #f4e4bc;
+  --color-gold-dark: #b8962e;
+}
+
+@layer base {
+  body {
+    @apply font-sans bg-gray-50 text-gray-900 scroll-smooth;
+  }
+}
+
+.hero-gradient {
+  background: linear-gradient(rgba(1, 50, 32, 0.75), rgba(1, 50, 32, 0.75)), url('https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&q=80&w=1920');
+  background-size: cover;
+  background-position: center;
+}
+
+.glass {
+  @apply bg-white/10 backdrop-blur-md border border-white/20;
+}
